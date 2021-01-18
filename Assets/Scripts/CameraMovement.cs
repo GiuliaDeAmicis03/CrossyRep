@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraMovement : MonoBehaviour
 {
     public Rigidbody2D rigidbody; 
-    float speed = 0.3f; 
+    float speed = 0.4f; 
 
     // Update is called once per frame
     void FixedUpdate()
