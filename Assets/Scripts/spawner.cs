@@ -6,9 +6,16 @@ public class spawner : MonoBehaviour
     public GameObject enemy;
     public Transform[] SpawnPoints;
     float nextTimeToSpawn = 0f;
+    [SerializeField]
+    private float _speed = 4f;
 
     void Update ()
     {
+        // transform.Translate(Vector3.down * _speed * Time.deltaTime);
+        // if(transform.position.y < -4f)
+        // {
+        //     transform.position = new Vector3(transform.position.x,12.5f,transform.position.z);
+        // }
         if (nextTimeToSpawn <= Time.time) 
         {
             SpawnEnemy();
