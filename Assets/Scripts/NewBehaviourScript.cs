@@ -55,7 +55,7 @@ public class NewBehaviourScript : MonoBehaviour
         {
             _score.DecreaseScore();
         }
-            
+
     }
 }
 
