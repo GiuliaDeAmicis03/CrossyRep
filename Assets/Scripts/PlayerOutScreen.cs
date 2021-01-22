@@ -12,7 +12,7 @@ public class PlayerOutScreen : MonoBehaviour
         {
             Debug.Log("WE LOST!");
             //score.currentscore = 0;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene(2);
         }
     }
 }
