@@ -1399,7 +1399,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameOverScreen: {fileID: 0}
   rigidbody: {fileID: 1181006222}
-  spriterenderer: {fileID: 0}
+  spriterenderer: {fileID: 1181006224}
   _score: {fileID: 0}
 --- !u!212 &1181006224
 SpriteRenderer:
