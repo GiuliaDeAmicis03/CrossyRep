@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class NewBehaviourScript : MonoBehaviour
+public class Player : MonoBehaviour
 {
     // Start is called before the first frame update
 
-
+    public GameOverScreen GameOverScreen;
     public Rigidbody2D rigidbody;
+    public SpriteRenderer spriterenderer;
 
     Vector2 movement;
 
@@ -43,19 +44,14 @@ public class NewBehaviourScript : MonoBehaviour
         if (collider.tag == "enemy")
         {
             Debug.Log("WE LOST!");
-            //score.currentscore = 0;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        //score.currentscore = 0; already a note stoopid
+        //    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene(2);
+        //if (collider.tag == "enemy")
+        //{
+        //    Debug.Log("WE LOST!");
+        //    spriterenderer.enabled = false;
         }
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            _score.IncreaseScore();
-        }
-            
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            _score.DecreaseScore();
-        }
-            
     }
 }
 

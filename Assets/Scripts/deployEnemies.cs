@@ -22,7 +22,7 @@ public class deployEnemies : MonoBehaviour
         //     whereToSpawn = new Vector2 (randY, transform.position.x);
         //     Instantiate (SpawnPoint, whereToSpawn, Quaternion.identity);
         // }
-        MainCamera_Y = Camera.transform.position.y - 7;
+        MainCamera_Y = Camera.transform.position.y - 4;
         if(MainCamera_Y > transform.position.y)
         {
             transform.position = new Vector2(transform.position.x,transform.position.y + 10f);
