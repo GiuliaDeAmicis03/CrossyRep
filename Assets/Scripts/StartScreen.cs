@@ -8,6 +8,6 @@ public class StartScreen : MonoBehaviour
     public void Update()
     {
         if (Input.GetKeyDown(KeyCode.Return))
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(5);
     }
 }
