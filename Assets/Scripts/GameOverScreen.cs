@@ -9,6 +9,6 @@ public class GameOverScreen : MonoBehaviour
     
     public void RetryButton()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 }
